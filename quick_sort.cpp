@@ -62,7 +62,7 @@ int main() {
    
    cout << "quick_sorted_asc_10000" << endl;
     auto t_start = std::chrono::high_resolution_clock::now();
-    quick_sort(sa_a1, 0, n1 - 1);  
+    quick_sort(sa_a1, 0, n1-1);  
     auto t_end = std::chrono::high_resolution_clock::now();
     double elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
     
@@ -71,7 +71,7 @@ int main() {
     
     cout << "quick_sorted_asc_20000" << endl;
     t_start = std::chrono::high_resolution_clock::now();
-    quick_sort(sa_a2, 0, n2 - 1);  
+    quick_sort(sa_a2, 0, n2-1);  
     t_end = std::chrono::high_resolution_clock::now();
     elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
     
@@ -80,7 +80,7 @@ int main() {
     
     cout << "quick_sorted_asc_50000" << endl;
     t_start = std::chrono::high_resolution_clock::now();
-    quick_sort(sa_a3, 0, n3 - 1);  
+    quick_sort(sa_a3, 0, n3-1);  
     t_end = std::chrono::high_resolution_clock::now();
     elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
     
@@ -89,7 +89,7 @@ int main() {
     
     cout << "quick_sorted_asc_100000" << endl;
     t_start = std::chrono::high_resolution_clock::now();
-    quick_sort(sa_a4, 0, n4 - 1);  
+    quick_sort(sa_a4, 0, n4-1);  
     t_end = std::chrono::high_resolution_clock::now();
     elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
     
@@ -97,49 +97,49 @@ int main() {
     
     cout << "quick_sorted_desc_10000" << endl;
     t_start = std::chrono::high_resolution_clock::now();	
-    quick_sort(sd_a1, 0, n1 - 1);  
+    quick_sort(sd_a1, 0, n1-1);  
     t_end = std::chrono::high_resolution_clock::now();
     elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
     cout << elapsed_time_ms << endl;
     
     cout << "quick_sorted_desc_20000" << endl;
     t_start = std::chrono::high_resolution_clock::now();	
-    quick_sort(sd_a2, 0, n2 - 1);  
+    quick_sort(sd_a2, 0, n2-1);  
     t_end = std::chrono::high_resolution_clock::now();
     elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
     cout << elapsed_time_ms << endl;
     
     cout << "quick_sorted_desc_50000" << endl;
     t_start = std::chrono::high_resolution_clock::now();	
-    quick_sort(sd_a3, 0, n3 - 1);  
+    quick_sort(sd_a3, 0, n3-1);  
     t_end = std::chrono::high_resolution_clock::now();
     elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
     cout << elapsed_time_ms << endl;
     
     cout << "quick_sorted_desc_100000" << endl;
     t_start = std::chrono::high_resolution_clock::now();	
-    quick_sort(sd_a4, 0, n4);  
+    quick_sort(sd_a4, 0, n4-1);  
     t_end = std::chrono::high_resolution_clock::now();
     elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
     cout << elapsed_time_ms << endl;
     
     cout << "quick_sorted_random_10000" << endl;
     t_start = std::chrono::high_resolution_clock::now();	
-    quick_sort(u_a1, 0, n1);  
+    quick_sort(u_a1, 0, n1-1);  
     t_end = std::chrono::high_resolution_clock::now();
     elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
     cout << elapsed_time_ms << endl;
     
     cout << "quick_sorted_random_20000" << endl;
     t_start = std::chrono::high_resolution_clock::now();	
-    quick_sort(u_a2, 0, n2);  
+    quick_sort(u_a2, 0, n2-1);  
     t_end = std::chrono::high_resolution_clock::now();
     elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
     cout << elapsed_time_ms << endl;
     
     cout << "quick_sorted_random_50000" << endl;
     t_start = std::chrono::high_resolution_clock::now();	
-    quick_sort(u_a3, 0, n3);  
+    quick_sort(u_a3, 0, n3-1);  
     t_end = std::chrono::high_resolution_clock::now();
     elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
     cout << elapsed_time_ms << endl;
@@ -147,7 +147,7 @@ int main() {
     
     cout << "quick_sorted_random_100000" << endl;
     t_start = std::chrono::high_resolution_clock::now();	
-    quick_sort(u_a4, 0, n4);  
+    quick_sort(u_a4, 0, n4-1);  
     t_end = std::chrono::high_resolution_clock::now();
     elapsed_time_ms = std::chrono::duration<double, std::milli>(t_end-t_start).count();
     cout << elapsed_time_ms << endl;
@@ -204,4 +204,3 @@ void swap(int* a, int* b){
 }
         
 	
-
